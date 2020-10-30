@@ -1,16 +1,13 @@
-# How-to-create-the-directional-compass-with-the-WPF-circular-gauge-SfCircularGauge-
-This demo explains How to create the directional compass with the WPF circular gauge (SfCircularGauge)
-
-![Output image of directional compass](CompassImage.PNG)
- 
-## Creating the above UI
-
-Above use case has been achieved by using the below code snippet
-
-[XAML]
-
-```
-     <gauge:SfCircularGauge SpacingMargin="0.7">
+﻿<Window x:Class="CompassSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CompassSample"
+        mc:Ignorable="d"
+                xmlns:gauge="http://schemas.syncfusion.com/wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <gauge:SfCircularGauge SpacingMargin="0.7">
         <gauge:SfCircularGauge.Scales>
             <gauge:CircularScale StartAngle="270" SweepAngle="360" ShowLastLabel="False" TickPosition="Custom"
                                      LabelOffset="0.75" RimStroke="#EDEEEF" Interval="1" RimStrokeThickness="0"
@@ -39,53 +36,4 @@ Above use case has been achieved by using the below code snippet
             </gauge:CircularScale>
         </gauge:SfCircularGauge.Scales>
     </gauge:SfCircularGauge>
-
-```
-
-[C#]
-
-```
-        private void CircularScale_LabelCreated(object sender, LabelCreatedEventArgs args)
-        {
-            switch ((string)args.LabelText)
-            {
-                case "0":
-                    args.LabelText = "N";
-                    break;
-                case "1":
-                    args.LabelText = "NE";
-                    break;
-                case "2":
-                    args.LabelText = "E";
-                    break;
-                case "3":
-                    args.LabelText = "SE";
-                    break;
-                case "4":
-                    args.LabelText = "S";
-                    break;
-                case "5":
-                    args.LabelText = "SW";
-                    break;
-                case "6":
-                    args.LabelText = "W";
-                    break;
-                case "7":
-                    args.LabelText = "NW";
-                    break;
-            }
-        }
-
-```
-
-## See also
-
-[How to add different types of needle pointer in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/pointers#different-types-of-needle-pointer)
-
-[How to customize the needle pointer in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/pointers#needle-pointer-customization)
-
-[How to customize the needle pointer knob in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/pointers#needle-pointer-knob-customization)
-
-[How to set visibility for needle pointer in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/pointers#setting-visibility-of-needle-pointer)
-
-[How to set tail for needle pointer in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/pointers#setting-tail-for-needle-pointer)
+</Window>

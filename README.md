@@ -78,6 +78,8 @@ Above use case has been achieved by using the below code snippet
 
 ```
 
+KB article - [How-to-create-the-directional-compass-with-the-WPF-circular-gauge-SfCircularGauge](https://www.syncfusion.com/kb/12100/how-to-create-the-directional-compass-ui-with-the-wpf-circular-gauge-sfcirculargauge)
+
 ## See also
 
 [How to add different types of needle pointer in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/pointers#different-types-of-needle-pointer)

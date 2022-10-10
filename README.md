@@ -1,6 +1,6 @@
 # How to create the directional compass with the WPF circular gauge SfCircularGauge
 
-This repository contains sample for how to create the directional compass with the [Syncfusion WPF SfCircularGauge](https://help.syncfusion.com/wpf/radial-gauge/getting-started) control.
+This repository contains sample to create the directional compass with the [Syncfusion WPF SfCircularGauge](https://help.syncfusion.com/wpf/radial-gauge/getting-started) control.
 
 Please refer the KB through this [link](https://www.syncfusion.com/kb/12100/how-to-create-the-directional-compass-ui-with-the-wpf-circular-gauge-sfcirculargauge).
 
